@@ -14,15 +14,13 @@ Crée une copie d'objet.
 ###`->`(opérateur de l'objet)
 Permet l'appel des propriétés non statiques ou méthodes non statiques.
 
-- public
-- protected
-- private
-###$this
+###public, protected, private
+Défini la visibilité d'une propriété ou méthode.
+
+###`$this`
 Référence à l'objet appelant (habituellement, l'objet auquel la méthode appartient, mais ce peut être un autre objet si la méthode est appelée de manière statique depuis le contexte d'un autre objet).
 
 ###extends
 Une classe peut hériter des méthodes et des membres d'une autre classe en utilisant le mot-clé extends dans la déclaration.
 Il n'est pas possible d'étendre plusieurs classes : une classe peut uniquement hériter d'une seule classe de base.
-- parent
-- self
-- static
+
