@@ -91,20 +91,3 @@ spl_autoload_register('my_autoloader');
 ##Interface
 
 
-
-
-
-##Keywords
-
-- class
-- new
-- clone
-- ->
-- public
-- protected
-- private
-- $this
-- extends
-- parent
-- self
-- static
