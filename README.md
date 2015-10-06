@@ -1,5 +1,5 @@
 #[POO (Programation Orienté Objet)](http://php.net/manual/fr/language.oop5.php)
-Année 60-70
+Elaboré début des années 1960 et poursuivi dans les années 70.
 
 Il consiste en la définition et l'interaction de briques logicielles appelées objets ; un objet représente un concept, une idée ou toute entité du monde physique, comme une voiture, une personne ou encore une page d'un livre.
 
