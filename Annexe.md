@@ -11,7 +11,7 @@ Un objet sera alors systématiquement créé.
 ###clone
 Crée une copie d'objet.
 
-###`->`(opérateur de l'objet)
+###`->` (opérateur de l'objet)
 Permet l'appel des propriétés non statiques ou méthodes non statiques.
 
 ###public, protected, private
