@@ -1,4 +1,6 @@
 #[POO (Programation Orienté Objet)](http://php.net/manual/fr/language.oop5.php)
+![Nuage POO PHP](https://github.com/IT-2015/POO/blob/master/img/Nuage_POO.jpg)
+
 Elaboré début des années 1960 et poursuivi dans les années 70.
 
 Il consiste en la définition et l'interaction de briques logicielles appelées objets ; un objet représente un concept, une idée ou toute entité du monde physique, comme une voiture, une personne ou encore une page d'un livre.
@@ -49,17 +51,27 @@ La visibilité d'une propriété ou d'une méthode peut être définie en préfi
 
 ##Constante
 
-Il est possible de définir des valeurs constantes à l'intérieur d'une classe, qui ne seront pas modifiables. Les constantes diffèrent des variables normales du fait que l'on n'utilise pas le symbole $ pour les déclarer ou les utiliser.
+Il est possible de définir des valeurs constantes à l'intérieur d'une classe, qui ne seront pas modifiables. Les constantes diffèrent des variables normales du fait que l'on n'utilise pas le symbole `$` pour les déclarer ou les utiliser.
 
 La valeur doit être une expression constante, pas (par exemple) une variable, une propriété, le résultat d'une opération mathématique, ou un appel de fonction. 
 
 ##Auto-chargement de classes
 
+De nombreux développeurs qui écrivent des applications orientées objet créent un fichier source par définition de classe. 
+Un des plus gros inconvénients de cette méthode est d'avoir à écrire une longue liste d'inclusions de fichier de classes au début de chaque script : une inclusion par classe.
 
+Vous pouvez définir une fonction `my_autoload()` qui sera automatiquement appelée si vous essayez d'utiliser une classe ou interface qui n'est pas encore définie. Grâce à elle, vous avez une dernière chance pour inclure une définition de classe, avant que PHP n'échoue avec une erreur.
 
+La fonction `spl_autoload_register()` fournit une alternative plus flexible pour le chargement automatique de classes.
 
+###Exemple d'autoload
 
-
+```php
+function my_autoloader($class) {
+    include 'classes/' . $class . '.class.php';
+}
+spl_autoload_register('my_autoloader');
+```
 
 ##Statique
 
@@ -70,6 +82,7 @@ La valeur doit être une expression constante, pas (par exemple) une variable, u
 
 
 
+##
 
 ##Keywords
 
@@ -83,6 +96,8 @@ La valeur doit être une expression constante, pas (par exemple) une variable, u
 - $this
 - extends
 - parent
+- self
+- static
 
 
 
