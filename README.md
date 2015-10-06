@@ -64,7 +64,7 @@ Vous pouvez définir une fonction `my_autoload()` qui sera automatiquement appel
 
 La fonction `spl_autoload_register()` fournit une alternative plus flexible pour le chargement automatique de classes.
 
-###Exemple d'autoload
+###Exemple d'autoloader
 
 ```php
 function my_autoloader($class) {
@@ -78,11 +78,21 @@ spl_autoload_register('my_autoloader');
 
 
 
-##Abstraction
+##Constructeurs et destructeurs
 
 
 
-##
+
+##Méthodes magiques
+
+
+
+
+##Interface
+
+
+
+
 
 ##Keywords
 
@@ -98,9 +108,3 @@ spl_autoload_register('my_autoloader');
 - parent
 - self
 - static
-
-
-
-
-
-
