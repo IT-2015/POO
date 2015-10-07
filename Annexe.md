@@ -21,6 +21,13 @@ Défini la visibilité d'une propriété ou méthode.
 Référence à l'objet appelant (habituellement, l'objet auquel la méthode appartient, mais ce peut être un autre objet si la méthode est appelée de manière statique depuis le contexte d'un autre objet).
 
 ###extends
-Une classe peut hériter des méthodes et des membres d'une autre classe en utilisant le mot-clé extends dans la déclaration.
+Une classe peut hériter des méthodes et des membres d'une autre classe en utilisant le mot-clé `extends` dans la déclaration.
 Il n'est pas possible d'étendre plusieurs classes : une classe peut uniquement hériter d'une seule classe de base.
+
+###const
+Définie une constante de class
+
+###static
+Définie un élement dit static, méthode ou propriété.
+
 
