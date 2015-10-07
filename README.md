@@ -101,7 +101,7 @@ PHP 5 introduit un concept de destructeur similaire à celui d'autres langages o
 
 > Tout comme le constructeur, le destructeur parent ne sera pas appelé implicitement par le moteur. Pour exécuter le destructeur parent, vous devez appeler explicitement la fonction parent::__destruct dans le corps du destructeur. Tout comme les constructeurs, une classe enfant peut hériter du destructeur du parent s'il n'en implémente pas un lui même. 
 
-(Example)[]
+[Example](https://github.com/IT-2015/POO/blob/master/Example/destruct.php)
 
 ##Méthodes magiques
 
