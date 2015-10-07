@@ -78,10 +78,30 @@ spl_autoload_register('my_autoloader');
 
 
 
-##Constructeurs et destructeurs
+## Constructeurs et destructeurs
+
+Se représente via les méthodes magiques `__construct` et `__destruct`.
+
+### Constructeur 
+
+`void __construct ([ mixed $args = "" [, $... ]] )`
+
+PHP permet aux développeurs de déclarer des constructeurs pour les classes. Les classes qui possèdent une méthode constructeur appellent cette méthode à chaque création d'une nouvelle instance de l'objet (`new`), ce qui est intéressant pour toutes les initialisations dont l'objet a besoin avant d'être utilisé. 
+
+Pour des raisons de compatibilité ascendante, si PHP ne peut pas trouver une fonction `__construct()` pour une classe donnée, et que la classe n'en hérite pas de la classe parent, il cherchera une fonction constructeur représentée, comme dans l'ancien style (PHP < 5), par le __nom de la classe__. 
+
+> Note: Les constructeurs parents ne sont pas appelés implicitement si la classe enfant définit un constructeur. Si vous voulez utiliser un constructeur parent, il sera nécessaire de faire appel à `parent::__construct()` depuis le constructeur enfant. Si l'enfant ne définit pas un constructeur alors il peut être hérité de la classe parent, exactement de la même façon qu'une méthode le serait (si elle n'a pas été déclarée comme privée). 
 
 
+### Destructeur
 
+`void __destruct  ( void )`
+
+PHP 5 introduit un concept de destructeur similaire à celui d'autres langages orientés objet, comme le C++. La méthode destructeur est appelée dès qu'il n'y a plus de référence sur un objet donné, ou dans n'importe quel ordre pendant la séquence d'arrêt. 
+
+> Tout comme le constructeur, le destructeur parent ne sera pas appelé implicitement par le moteur. Pour exécuter le destructeur parent, vous devez appeler explicitement la fonction parent::__destruct dans le corps du destructeur. Tout comme les constructeurs, une classe enfant peut hériter du destructeur du parent s'il n'en implémente pas un lui même. 
+
+(Example)[]
 
 ##Méthodes magiques
 
