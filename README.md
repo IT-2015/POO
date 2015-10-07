@@ -113,7 +113,7 @@ Les noms de méthodes `__construct()`, `__destruct()`, `__call()`, `__callStatic
 
 La méthode `__toString()` détermine comment l'objet doit réagir lorsqu'il est traité comme une chaîne de caractères. Par exemple, ce que `echo $obj;` affichera. Cette méthode doit retourner une chaîne, sinon une erreur `E_RECOVERABLE_ERROR` sera levée.
 
-[Example]()
+[Example](https://github.com/IT-2015/POO/blob/master/Example/toString.php)
 
 
 ### __sleep() et __wakeup()
@@ -124,7 +124,7 @@ La méthode `__toString()` détermine comment l'objet doit réagir lorsqu'il est
 La fonction `serialize()` vérifie si votre classe a une méthode avec le nom magique `__sleep()`. Si c'est le cas, cette méthode sera exécutée avant toute linéarisation. Elle peut nettoyer l'objet, et elle est supposée retourner un tableau avec les noms de toutes les variables de l'objet qui doivent être linéarisées. Si la méthode ne retourne rien, alors `NULL` sera linéarisé, et une alerte de type `E_NOTICE` sera émise. 
 
 
-[Example]()
+[Example](https://github.com/IT-2015/POO/blob/master/Example/sleep-wakeup.php)
 
 
 ### Surcharge de propriétés
@@ -137,7 +137,6 @@ La fonction `serialize()` vérifie si votre classe a une méthode avec le nom ma
 
 `__get()` est appelée pour lire des données depuis des propriétés inaccessibles. 
 
-
 `public bool __isset ( string $name )`
 
 `__isset()` est sollicitée lorsque `isset()` ou la fonction `empty()` sont appelées sur des propriétés inaccessibles. 
@@ -146,7 +145,7 @@ La fonction `serialize()` vérifie si votre classe a une méthode avec le nom ma
 
 `__unset()` est invoquée lorsque `unset()` est appelée sur des propriétés inaccessibles. 
 
-[Example]()
+[Example](https://github.com/IT-2015/POO/blob/master/Example/surchagePropriete.php)
 
 ## Interface
 
