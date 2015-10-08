@@ -60,9 +60,9 @@ La valeur doit être une expression constante, pas (par exemple) une variable, u
 De nombreux développeurs qui écrivent des applications orientées objet créent un fichier source par définition de classe. 
 Un des plus gros inconvénients de cette méthode est d'avoir à écrire une longue liste d'inclusions de fichier de classes au début de chaque script : une inclusion par classe.
 
-Vous pouvez définir une fonction `my_autoload()` qui sera automatiquement appelée si vous essayez d'utiliser une classe ou interface qui n'est pas encore définie. Grâce à elle, vous avez une dernière chance pour inclure une définition de classe, avant que PHP n'échoue avec une erreur.
+Vous pouvez définir une fonction `__autoload()` qui sera automatiquement appelée si vous essayez d'utiliser une classe ou interface qui n'est pas encore définie. Grâce à elle, vous avez une dernière chance pour inclure une définition de classe, avant que PHP n'échoue avec une erreur.
 
-La fonction `spl_autoload_register()` fournit une alternative plus flexible pour le chargement automatique de classes.
+La fonction `spl_autoload_register()` permet le chargement automatique de classes.
 
 ### Exemple d'autoloader
 
