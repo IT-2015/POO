@@ -1,5 +1,7 @@
 <?php
-//http://php.net/manual/fr/class.countable.php
+// http://php.net/manual/fr/class.countable.php
+// http://php.net/manual/fr/class.iterator.php
+
 class My_Iterator implements Countable, Iterator
 {
   public  $data = array();
