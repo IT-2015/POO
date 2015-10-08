@@ -156,6 +156,21 @@ Une __propriété inaccessible__ est une propriété qui ne permet pas l'accès 
 
 [Example](https://github.com/IT-2015/POO/blob/master/Example/surchagePropriete.php)
 
+### Surcharge de méthodes
+
+`public mixed __call ( string $name , array $arguments )`
+
+`__call()` est appelée lorsque l'on invoque des méthodes inaccessibles dans un contexte objet.
+
+`public static mixed __callStatic ( string $name , array $arguments )`
+
+`__callStatic()` est lancée lorsque l'on invoque des méthodes inaccessibles dans un contexte statique. 
+
+L'argument `$name` est le nom de la méthode appelée. L'argument `$arguments` est un tableau contenant les paramètres passés à la méthode `$name`. 
+
+[Example](https://github.com/IT-2015/POO/blob/master/Example/surchageMethode.php)
+
+
 ## Interface
 
 
