@@ -185,9 +185,25 @@ Cette méthode est appelée par `var_dump()` lors du traitement d'un objet pour 
 
 Une fois le clonage effectué, si une méthode `__clone()` est définie, la méthode `__clone()` du nouvel objet sera appelée, pour permettre à chaque propriété qui doit l'être d'être modifiée. 
 
-[Example]()
+[Example](https://github.com/IT-2015/POO/blob/master/Example/clone.php)
 
+## __set_state()
 
+`static object __set_state ( array $properties )`
+
+ Cette méthode statique est appelée pour les classes exportées par la fonction `var_export()` depuis PHP 5.1.0.
+
+Le seul paramètre de cette méthode est un tableau contenant les propriétés exportées sous la forme `array('propriété' => valeur, ...)`. 
+
+[Example](https://github.com/IT-2015/POO/blob/master/Example/set_state.php)
+
+## __invoke
+
+`mixed __invoke ([ $... ] )`
+
+La méthode `__invoke()` est appelée lorsqu'un script tente d'appeler un objet comme une fonction. 
+
+[Example](https://github.com/IT-2015/POO/blob/master/Example/invoke.php)
 
 
 ## Interface
