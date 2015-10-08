@@ -197,7 +197,7 @@ Le seul paramètre de cette méthode est un tableau contenant les propriétés e
 
 [Example](https://github.com/IT-2015/POO/blob/master/Example/set_state.php)
 
-## __invoke
+## __invoke()
 
 `mixed __invoke ([ $... ] )`
 
