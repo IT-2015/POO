@@ -62,7 +62,7 @@ Un des plus gros inconvénients de cette méthode est d'avoir à écrire une lon
 
 Deux façons de mettre en place un système d'auto-chargement de classe : 
  - Vous pouvez définir une fonction `__autoload()` qui sera automatiquement appelée si vous essayez d'utiliser une classe ou interface qui n'est pas encore définie.  **(Ceci est déprécié)**
- - Vous pouvez utilisé la fonction `spl_autoload_register()` qui permet le chargement automatique de classes.
+ - Vous pouvez utiliser la fonction `spl_autoload_register()` qui permet le chargement automatique de classes.
 
 Grâce à elle, vous avez une dernière chance pour inclure une définition de classe, avant que PHP n'échoue avec une erreur.
 
@@ -135,7 +135,7 @@ Réciproquement, la fonction `unserialize()` vérifie la présence d'une méthod
 
 ### Surcharge de propriétés
 
-Une __propriété inaccessible__ est une propriété qui ne permet pas l'accès à ses données ou l'affectation de valeur car elle est bloquée par sa visibilité (protected, private) et son contexte (code global, ou classe fille) ou tout simplement parcequ'elle n'est pas définie.
+Une __propriété inaccessible__ est une propriété qui ne permet pas l'accès à ses données ou l'affectation de valeur car elle est bloquée par sa visibilité (protected, private) et son contexte (code global, ou classe fille) ou tout simplement parce qu'elle n'est pas définie.
 
 
 `public void __set ( string $name , mixed $value )`
