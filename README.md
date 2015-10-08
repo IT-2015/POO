@@ -209,3 +209,5 @@ La méthode `__invoke()` est appelée lorsqu'un script tente d'appeler un objet 
 ## Interface
 
 
+
+## Abstraction de classe
