@@ -168,7 +168,7 @@ Une __propriété inaccessible__ est une propriété qui ne permet pas l'accès 
 
 L'argument `$name` est le nom de la méthode appelée. L'argument `$arguments` est un tableau contenant les paramètres passés à la méthode `$name`. 
 
-[Example](https://github.com/IT-2015/POO/blob/master/Example/surchageMethode.php)
+[Example](https://github.com/IT-2015/POO/blob/master/Example/surchargeMethode.php)
 
 
 ## Interface
