@@ -121,9 +121,11 @@ La méthode `__toString()` détermine comment l'objet doit réagir lorsqu'il est
 ### __sleep() et __wakeup()
 
 `public array __sleep ( void )`
+
 La fonction `serialize()` vérifie si votre classe a une méthode avec le nom magique `__sleep()`. Si c'est le cas, cette méthode sera exécutée avant toute linéarisation. Elle peut nettoyer l'objet, et elle est supposée retourner un tableau avec les noms de toutes les variables de l'objet qui doivent être linéarisées. Si la méthode ne retourne rien, alors `NULL` sera linéarisé, et une alerte de type `E_NOTICE` sera émise. 
 
 `void __wakeup ( void )`
+
 Réciproquement, la fonction `unserialize()` vérifie la présence d'une méthode dont le nom est le nom magique `__wakeup()`. Si elle est présente, cette fonction peut reconstruire toute ressource que l'objet pourrait possèder. 
 
 
