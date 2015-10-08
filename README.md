@@ -171,6 +171,25 @@ L'argument `$name` est le nom de la méthode appelée. L'argument `$arguments` e
 [Example](https://github.com/IT-2015/POO/blob/master/Example/surchargeMethode.php)
 
 
+## __debugInfo() (PHP 5.6+)
+
+`array __debugInfo ( void )`
+
+Cette méthode est appelée par `var_dump()` lors du traitement d'un objet pour récupérer les propriétés qui doivent être affichées. Si la méthode n'est pas définie dans un objet, alors toutes les propriétés publiques, protégées et privées seront affichées. 
+
+[Example](https://github.com/IT-2015/POO/blob/master/Example/debugInfo.php)
+
+## __clone()
+
+`void __clone ( void )`
+
+Une fois le clonage effectué, si une méthode `__clone()` est définie, la méthode `__clone()` du nouvel objet sera appelée, pour permettre à chaque propriété qui doit l'être d'être modifiée. 
+
+[Example]()
+
+
+
+
 ## Interface
 
 
