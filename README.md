@@ -135,7 +135,7 @@ Réciproquement, la fonction `unserialize()` vérifie la présence d'une méthod
 
 ### Surcharge de propriétés
 
-Une __propriété inaccessible__ c'est une propriété qui ne permet pas l'accès aux données ou son affectation car celle-ci se voit bloquer via sa visibilité et le contexte ou l'on se trouve (code global, ou classe fille) ou tout simplement parcequ'elle n'est pas définie.
+Une __propriété inaccessible__ est une propriété qui ne permet pas l'accès à ses données ou l'affectation de valeur car elle est bloquée par sa visibilité (protected, private) et son contexte (code global, ou classe fille) ou tout simplement parcequ'elle n'est pas définie.
 
 
 `public void __set ( string $name , mixed $value )`
