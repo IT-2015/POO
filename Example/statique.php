@@ -6,6 +6,10 @@ class Foo
     public function staticValue() {
         return self::$my_static;
     }
+    
+    public static function myStaticFunction(){
+    	return self::$my_static;
+    }
 }
 
 class Bar extends Foo
@@ -21,6 +25,10 @@ print Foo::$my_static . "\n";
 $foo = new Foo();
 print $foo->staticValue() . "\n";
 print $foo->my_static . "\n";      // "Propriété" my_static non définie
+
+print FOO::myStaticFunction();
+print $foo->myStaticFunction();
+
 
 print $foo::$my_static . "\n";
 $classname = 'Foo';

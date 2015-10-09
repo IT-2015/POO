@@ -94,7 +94,7 @@ Comme les méthodes statiques peuvent être appelées sans qu'une instance d'obj
 
 On ne peut pas accéder à des propriétés statiques à travers l'objet en utilisant l'opérateur `->`. 
 
-Les propriétés statique sont considérées comme n'importe qu'elle autre propriété, les propriétés statiques ne peuvent être initialisées qu'en utilisant un littéral ou une constante.
+Les propriétés statiques sont considérées comme n'importe quelle autre propriété, les propriétés statiques ne peuvent être initialisées qu'en utilisant un littéral ou une constante.
 
 
 
@@ -226,6 +226,27 @@ La méthode `__invoke()` est appelée lorsqu'un script tente d'appeler un objet 
 
 ## Interface
 
+  - interface
+  - implements
+  - const
 
+Les interfaces objet vous permettent de créer du code qui spécifie quelles méthodes une classe doit implémenter, sans avoir à définir comment ces méthodes fonctionneront. 
+
+Les interfaces sont définies en utilisant le mot-clé `interface`, de la même façon que pour une classe standard, mais sans qu'aucune des méthodes n'ait son contenu de spécifié. 
+
+De par la nature même d'une interface, toutes les méthodes déclarées dans une interface doivent être __publiques__.
+
+Pour implémenter une interface, l'opérateur `implements` est utilisé. Toutes les méthodes de l'interface doivent être implémentées dans une classe ; si ce n'est pas le cas, une erreur fatale sera émise. Les classes peuvent implémenter plus d'une interface, en séparant chaque interface par une virgule.
+
+
+Une interface, avec le typage, fournit une bonne façon de vous assurer qu'un objet particulier contient des méthodes particulières. Reportez-vous à l'opérateur `instanceof` et au `typage`. 
+
+
+### Les constantes
+
+Les interfaces peuvent contenir des constantes. Les constantes d'interfaces fonctionnent exactement comme les constantes de classe, mis à part le fait qu'elles ne peuvent pas être écrasées par une classe ou une interface qui en hérite. 
 
 ## Abstraction de classe
+
+
+
