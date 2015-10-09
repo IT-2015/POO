@@ -5,7 +5,9 @@ class Cared_DB_Connection {
 	protected $username;
 	protected $password;
 	
-	public function __construct($dsn, $username, $password){
+	protected static $link;
+	
+	private function __construct($dsn, $username, $password){
 		
 		$this->dsn = $dsn;
 		$this->username = $username;
@@ -14,9 +16,17 @@ class Cared_DB_Connection {
 		$this->connect();
 	}
 	
+	public function getInstance($dsn = null, $username = null, $password = null){
+		if(! self::$link instanceof PDO){
+			new self($dsn, $username, $password);
+		}
+		
+		return self::$link;
+	}
+	
 	public function connect(){
 		
-		$this->link = new PDO($this->dsn, $this->username, $this->password);
+		self::$link = new PDO($this->dsn, $this->username, $this->password);
 		
 	}
 	
@@ -28,5 +38,7 @@ class Cared_DB_Connection {
 		$this->connect();
 	}
 	
-	
+	public static function getDb(){
+		return self::$link;
+	}
 }
