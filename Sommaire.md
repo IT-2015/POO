@@ -1,4 +1,4 @@
-# [POO (Programation Orienté Objet)](http://php.net/manual/fr/language.oop5.php)
+# [POO (Programmation Orientée Objet)](http://php.net/manual/fr/language.oop5.php)
 ![Nuage POO PHP](https://github.com/IT-2015/POO/blob/master/img/Nuage_POO.jpg)
 
 ## Sommaire
