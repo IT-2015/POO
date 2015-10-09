@@ -94,7 +94,7 @@ Comme les méthodes statiques peuvent être appelées sans qu'une instance d'obj
 
 On ne peut pas accéder à des propriétés statiques à travers l'objet en utilisant l'opérateur `->`. 
 
-Les propriétés statique sont considérées comme n'importe qu'elle autre propriété, les propriétés statiques ne peuvent être initialisées qu'en utilisant un littéral ou une constante.
+Les propriétés statiques sont considérées comme n'importe quelle autre propriété, les propriétés statiques ne peuvent être initialisées qu'en utilisant un littéral ou une constante.
 
 
 
