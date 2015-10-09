@@ -51,9 +51,16 @@ La visibilité d'une propriété ou d'une méthode peut être définie en préfi
 
 ## Constante
 
+  - const
+  - :: (opérateur de résolution de portée)
+
 Il est possible de définir des valeurs constantes à l'intérieur d'une classe, qui ne seront pas modifiables. Les constantes diffèrent des variables normales du fait que l'on n'utilise pas le symbole `$` pour les déclarer ou les utiliser.
 
 La valeur doit être une expression constante, pas (par exemple) une variable, une propriété, le résultat d'une opération mathématique, ou un appel de fonction. 
+
+*Par convention les constantes sont défini en MAJUSCULE*
+
+> Exception : Une constante peut être déclaré dans une interface mais ne pourra pas être modifié par la classe qui l'implemente.
 
 ## Auto-chargement de classes
 
@@ -77,6 +84,17 @@ spl_autoload_register('my_autoloader');
 
 ## Statique
 
+  - static
+  - :: (opérateur de résolution de portée)
+  - self
+
+Le fait de déclarer des propriétés ou des méthodes comme statiques vous permet d'y accéder sans avoir besoin d'instancier la classe. On ne peut accéder à une propriété déclarée comme statique avec l'objet instancié d'une classe (bien que ce soit possible pour une méthode statique). 
+
+Comme les méthodes statiques peuvent être appelées sans qu'une instance d'objet n'ai été créée, la pseudo-variable `$this` n'est pas disponible dans les méthodes déclarées comme statiques. 
+
+On ne peut pas accéder à des propriétés statiques à travers l'objet en utilisant l'opérateur `->`. 
+
+Les propriétés statique sont considérées comme n'importe qu'elle autre propriété, les propriétés statiques ne peuvent être initialisées qu'en utilisant un littéral ou une constante.
 
 
 
