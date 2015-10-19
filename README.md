@@ -24,7 +24,7 @@ Il possède une structure interne et un comportement, et il sait interagir avec 
   
   $obj = new SimpleClass();
   
-  $obj->displayVar();
+  $obj->displayVar(); // Affiche : une valeur par défaut
 ?>
 ```
 
