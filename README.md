@@ -21,6 +21,10 @@ Il possède une structure interne et un comportement, et il sait interagir avec 
           echo $this->var;
       }
   }
+  
+  $obj = new SimpleClass();
+  
+  $obj->displayVar();
 ?>
 ```
 
