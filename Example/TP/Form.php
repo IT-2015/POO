@@ -1,3 +1,4 @@
+<?php
 class Form {
 	protected $attribs = array();
 
@@ -100,3 +101,4 @@ class Form {
 		return $this->render();
 	}
 }
+
