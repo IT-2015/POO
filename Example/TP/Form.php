@@ -7,6 +7,12 @@ class Form {
 	public function __construct(array $array = null){
 		if($array != null)
 			$this->setAttribs($array);
+
+		$this->init();
+	}
+
+	public function init(){
+		
 	}
 
 	public function __call($methodName, $args){
@@ -101,4 +107,3 @@ class Form {
 		return $this->render();
 	}
 }
-
