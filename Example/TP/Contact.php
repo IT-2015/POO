@@ -1,4 +1,7 @@
 <?php
+
+require_once 'Form.php';
+require_once 'Form/Element.php';
 class Form_Contact extends Form {
 	
 	public function init(){
